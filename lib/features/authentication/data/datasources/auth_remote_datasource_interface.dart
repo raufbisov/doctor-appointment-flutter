@@ -87,7 +87,7 @@ class AuthRemoteDatasource implements IAuthRemoteDatasource {
       throw StorageException();
     }
 
-    Uri url = Uri.http('localhost:8000', 'auth/user/');
+    Uri url = Uri.http('localhost:8000', '/auth/user/');
 
     http.Response response;
     try {
@@ -176,6 +176,7 @@ class AuthRemoteDatasource implements IAuthRemoteDatasource {
         'last_name': lastName,
         'phone_number': phoneNumber,
         'age': '$age',
+        'gender': 'Male'
       });
     } catch (e) {
       throw ServerException();

@@ -25,7 +25,7 @@ class _AdditionalPageState extends State<AdditionalPage> {
   late TextEditingController lastNameController;
   late TextEditingController phoneNumberController;
   late TextEditingController ageController;
-  late Gender gender = Gender.None;
+  late Gender gender = Gender.Male;
 
   @override
   void initState() {

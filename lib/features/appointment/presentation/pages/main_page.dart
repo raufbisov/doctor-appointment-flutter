@@ -1,3 +1,5 @@
+import 'package:doctor_appointment/features/appointment/presentation/pages/doctors_page.dart';
+import 'package:doctor_appointment/features/appointment/presentation/pages/profile_page.dart';
 import 'package:doctor_appointment/features/authentication/domain/entities/user.dart';
 import 'package:doctor_appointment/features/authentication/presentation/bloc/authentication_bloc.dart';
 import 'package:doctor_appointment/features/appointment/presentation/pages/add_appointment_page.dart';
@@ -18,6 +20,8 @@ class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
   static const List<Widget> _widgets = [
     SchedulePage(),
+    DoctorListPage(),
+    ProfilePage()
   ];
   @override
   Widget build(BuildContext context) {
